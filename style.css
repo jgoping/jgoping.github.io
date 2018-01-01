@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  font-family: Trebuchet;
+  color: #F0F0F0;
+  background-color: #ff4d4d;
+  border: 5px hidden;
+  border-radius: 15px;
+  padding: 2px 10px;
+  margin: 4px;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-left: 5px;
+  color: black;
+}
+
+h3 {
+  margin-left: 5px;
+}
+
+p, li {
+  font-family: Trebuchet;
+  font-size: 16;
+  margin-left: 5px;
+}
+
+.moveleft {
+  margin-left: -15px;
+}
+
+.titlebar {
+  font-size: 70px;
+  height: 90px;
+  margin: -10px 4px 0px 4px;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.photo {
+  margin-top: 10px;
+  border: 15px groove;
+  border-color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greeting {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 5px;
+  border: 5px solid;
+  display: inline-block;
+  background: #F0F0F0;
+  border-color: #F0F0F0;
+  border-radius: 5px;
+}
+
+.icons {
+  padding: 5px;
+  border: 5px solid;
+  display: inline-block;
+  background: #F0F0F0;
+  border-color: #F0F0F0;
+  border-radius: 5px;
+}
+
+.resume {
+  padding-right: 2px;
+}
+
+.linkedin {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.devpost {
+  padding-left: 2px;
+}
+
+/*.github {
+  padding-left: 2px;
+}*/
+
+#introduction {
+  background-image: url("University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
+  font-size: 100%;
+  float: right;
+}
+
+#projects {
+  /*background: #282828;
+  border-radius: 10px;
+  color: white;*/
+}
+
+.subheader {
+  color: #003d99;
+}
+
+.android-studio {
+  color: #2eb82e;
+}
+
+.python {
+  color: #0066ff;
+}
+
+.java {
+  color: #ff9933;
+}
+
+.turing {
+  color: #ff6600;
+}
+
+.html {
+  color: #6666ff;
+}
+
+.css {
+  color: #cc33ff;
+}
+
+.javascript {
+  color: #ff4d4d;
+}
+
+.jquery {
+  color: #ff4d4d;
+}
+
+.quilljs {
+  color: #006699;
+}
+
+.watson {
+  color: #00bfff;
+}
+
+.firebase {
+  color: #e62e00;
+}
+
+.c {
+  color: #336600;
+}
+
+.cplusplus {
+  color: #59b300;
+}
+
+.ruby {
+  color: #ff6699;
+}
+
+.racket {
+  color: #666699;
+}
+
+.important {
+  color: #0066ff;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
