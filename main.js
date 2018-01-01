@@ -96,7 +96,6 @@ $(document).ready(() => {
   })
   $projectbar.on('click', () => {
     $projects.slideToggle(500);
-    console.log($arrow1.text());
     $arrow1.text($arrow1.text() == "▼" ? "▲" : "▼");
   })
 
