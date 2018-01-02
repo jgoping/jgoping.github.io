@@ -72,7 +72,7 @@ p, li {
 }
 
 .icons {
-  padding: 5px;
+  padding: 5px 5px 1px 5px;
   border: 5px solid;
   display: inline-block;
   background: #F0F0F0;
