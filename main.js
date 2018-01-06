@@ -28,12 +28,6 @@ $(document).ready(() => {
   const $arrow4 = $("#arrow4");
   const $arrow5 = $("#arrow5");
 
-  /* Hides the entire webpage */
-  $titlebar.css("visibility", "hidden");
-  $photo.css("visibility", "hidden");
-  $sectionbar.hide();
-  $subheader.hide();
-  $h2.hide();
   $paragraph.css("visibility", "hidden");
   $listitem.hide();
 
@@ -44,6 +38,7 @@ $(document).ready(() => {
   $awards.hide();
   $education.hide();
 
+  /* Changes the text if javascript is enabled to account for the clickable tabs */
   $h2.text("Click on the tabs below to learn more about me!");
 
   /* Fades in the elements */

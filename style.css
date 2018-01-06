@@ -99,6 +99,8 @@ p, li {
 
 #introduction {
   background-image: url("University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg");
+  /* I take no credit for the photo above, credit goes to Victor Vucicevich for taking it.
+     Link to source: https://commons.wikimedia.org/wiki/File:University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
