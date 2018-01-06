@@ -2,7 +2,7 @@ console.log("Welcome to my console!");
 $(document).ready(() => {
   /* Declaration of constants */
   const $titlebar = $(".titlebar");
-  const $photo = $(".photo");
+  const $selfportrait = $("#selfportrait");
   const $sectionbar = $(".sectionbar");
   const $subheader = $(".subheader");
   const $paragraph = $("p");
@@ -28,6 +28,11 @@ $(document).ready(() => {
   const $arrow4 = $("#arrow4");
   const $arrow5 = $("#arrow5");
 
+  $titlebar.css("visibility", "hidden");
+  $sectionbar.hide();
+  $subheader.hide();
+  $selfportrait.css("visibility", "hidden");
+  $h2.hide();
   $paragraph.css("visibility", "hidden");
   $listitem.hide();
 
@@ -38,12 +43,9 @@ $(document).ready(() => {
   $awards.hide();
   $education.hide();
 
-  /* Changes the text if javascript is enabled to account for the clickable tabs */
-  $h2.text("Click on the tabs below to learn more about me!");
-
   /* Fades in the elements */
   $titlebar.css("visibility", "visible").hide().slideDown(500, function() {
-    $photo.css("visibility", "visible").hide().fadeIn(500, function() {
+    $selfportrait.css("visibility", "visible").hide().fadeIn(500, function() {
       $sectionbar.fadeIn(500);
       $subheader.fadeIn(500);
       $h2.fadeIn(500);
@@ -51,6 +53,9 @@ $(document).ready(() => {
       $listitem.fadeIn(500);
     });
   });
+
+  /* Changes the text if javascript is enabled to account for the clickable tabs */
+  $h2.text("Click on the tabs below to learn more about me!");
 
   /* Makes icons respond to being hovered over */
   $resume.on('mouseover', () => {
