@@ -46,6 +46,15 @@ p, li {
   padding-right: 0px;
 }
 
+@media only screen and (max-width: 445px) {
+   .titlebar {
+     font-size: 55px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+ }
+
 .center {
   text-align: center;
 }
