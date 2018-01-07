@@ -42,6 +42,8 @@ p, li {
   height: 90px;
   margin: -10px 4px 0px 4px;
   overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .center {
