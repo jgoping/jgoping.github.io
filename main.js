@@ -11,7 +11,7 @@ $(document).ready(() => {
   const $resume = $(".resume");
   const $linkedin = $(".linkedin");
   const $devpost = $(".devpost");
-  //const $github = $(".github");
+  const $github = $(".github");
   const $projectbar = $(".projectbar");
   const $projects = $("#projects");
   const $experiencebar = $(".experiencebar");
@@ -79,13 +79,13 @@ $(document).ready(() => {
     $devpost.css("transform", "scale(1, 1)");
   })
 
-/*
+
   $github.on('mouseover', () => {
     $github.css("transform", "scale(1.5, 1.5)");
   })
   $github.on('mouseleave', () => {
     $github.css("transform", "scale(1, 1)");
-  })*/
+  })
 
   /* Makes the section bars toggle the information */
   $projectbar.on('mouseover', () => {
