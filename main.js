@@ -46,11 +46,12 @@ $(document).ready(() => {
   /* Fades in the elements */
   $titlebar.css("visibility", "visible").hide().slideDown(500, function() {
     $selfportrait.css("visibility", "visible").hide().fadeIn(500, function() {
-      $sectionbar.fadeIn(500);
-      $subheader.fadeIn(500);
-      $h2.fadeIn(500);
-      $paragraph.css("visibility", "visible").hide().fadeIn(500);
-      $listitem.fadeIn(500);
+      $paragraph.css("visibility", "visible").hide().fadeIn(500, function() {
+        $sectionbar.fadeIn(500);
+        $subheader.fadeIn(500);
+        $h2.fadeIn(500);
+        $listitem.fadeIn(500);
+      });
     });
   });
 
