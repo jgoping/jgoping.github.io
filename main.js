@@ -47,7 +47,7 @@ $(document).ready(() => {
   $titlebar.css("visibility", "visible").hide().slideDown(500, function() {
     $selfportrait.css("visibility", "visible").hide().fadeIn(500, function() {
       $paragraph.css("visibility", "visible").hide().fadeIn(500, function() {
-        $sectionbar.fadeIn(500);
+        $sectionbar.slideDown(500);
         $subheader.fadeIn(500);
         $h2.fadeIn(500);
         $listitem.fadeIn(500);
