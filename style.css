@@ -32,15 +32,20 @@ p, li {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 20px;
-  /*background-color: #ffcccc;*/
+  padding: 6px 20px;
 }
 
 .grid-item {
+  position: relative;
   border: 1px solid;
   margin: 10px;
   border-radius: 5px;
-  /*background-color: #ffffff;*/
+}
+
+.footer {
+  /*position: absolute;
+    margin-top: 50px;*/
+  bottom: 0;
 }
 
 .moveleft {
@@ -109,6 +114,14 @@ p, li {
   height: 225px;
 }
 
+.project-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
 .icons {
   padding: 5px 5px 1px 5px;
   border: 5px solid;
@@ -170,7 +183,8 @@ p, li {
 }
 
 .python {
-  color: #0066ff;
+  /*color: #0066ff;*/
+  color: #cc9900;
 }
 
 .java {
