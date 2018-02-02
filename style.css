@@ -27,6 +27,12 @@ p, li {
   font-size: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 0px;
 }
 
 .grid-container {
@@ -48,7 +54,7 @@ p, li {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -129,8 +135,12 @@ p, li {
   text-align: center;
 }
 
+.subheader {
+  margin-bottom: 0px;
+}
+
 #selfportrait {
-  margin-top: 10px;
+  margin-top: 16px;
   border: 8px groove;
   border-color: #FFFFFF;
   display: block;
@@ -142,6 +152,8 @@ p, li {
 }
 
 .icons {
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 5px 5px 1px 5px;
   border: 5px solid;
   display: inline-block;
@@ -186,6 +198,20 @@ p, li {
   /*background: #282828;
   border-radius: 10px;
   color: white;*/
+}
+
+#workexperience, #technicalskills, #awards, #education {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#technicalskills {
+  margin-top: 10px;
+}
+
+#education {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-subheader {
