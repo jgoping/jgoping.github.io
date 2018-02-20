@@ -269,6 +269,22 @@ ul {
   color: #006699;
 }
 
+.nodejs {
+  color: #10a431;
+}
+
+.expressjs {
+  color: #5fbf65;
+}
+
+.mongodb {
+  color: #197446;
+}
+
+.ajax {
+  color: #1478aa;
+}
+
 .watson {
   color: #00bfff;
 }
