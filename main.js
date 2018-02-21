@@ -2,7 +2,14 @@ console.log("Welcome to my console!");
 
 // Sets the project photos to lazy load
 $(function() {
-  $(".project-photo").Lazy();
+  $(".project-photo").Lazy({
+    beforeLoad: function(element) {
+      console.log("Going to load " + element);
+    },
+    afterLoad: function(element) {
+      console.log("Loaded " + element);
+    }
+  });
 });
 
 $(document).ready(() => {
