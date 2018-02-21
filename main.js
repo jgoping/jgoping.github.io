@@ -1,6 +1,6 @@
 console.log("Welcome to my console!");
 $(document).ready(() => {
-  /* Declaration of constants */
+  // Declaration of constants
   const $titlebar = $(".titlebar");
   const $selfportrait = $("#selfportrait");
   const $sectionbar = $(".sectionbar");
@@ -14,6 +14,7 @@ $(document).ready(() => {
   const $github = $(".github");
   const $projectbar = $(".projectbar");
   const $projects = $("#projects");
+  const $projectphotos = $(".project-photo");
   const $experiencebar = $(".experiencebar");
   const $experience = $("#workexperience");
   const $skillbar = $(".skillbar");
@@ -28,6 +29,9 @@ $(document).ready(() => {
   const $arrow4 = $("#arrow4");
   const $arrow5 = $("#arrow5");
 
+  // Sets the project photos to lazy load
+  $projectphotos.lazy();
+
   $titlebar.css("visibility", "hidden");
   $sectionbar.hide();
   $subheader.hide();
@@ -36,14 +40,14 @@ $(document).ready(() => {
   $paragraph.css("visibility", "hidden");
   $listitem.hide();
 
-  /* Hides the website content */
+  // Hides the website content
   $projects.hide();
   $experience.hide();
   $technicalskills.hide();
   $awards.hide();
   $education.hide();
 
-  /* Fades in the elements */
+  // Fades in the elements
   $titlebar.css("visibility", "visible").hide().slideDown(500, function() {
     $selfportrait.css("visibility", "visible").hide().fadeIn(500, function() {
       $paragraph.css("visibility", "visible").hide().fadeIn(500, function() {
@@ -55,10 +59,10 @@ $(document).ready(() => {
     });
   });
 
-  /* Changes the text if javascript is enabled to account for the clickable tabs */
+  // Changes the text if javascript is enabled to account for the clickable tabs
   $h2.text("Click on the tabs below to learn more about me!");
 
-  /* Makes icons respond to being hovered over */
+  // Makes icons respond to being hovered over
   $resume.on('mouseover', () => {
     $resume.css("transform", "scale(1.5, 1.5)");
   })
@@ -88,7 +92,7 @@ $(document).ready(() => {
     $github.css("transform", "scale(1, 1)");
   })
 
-  /* Makes the section bars toggle the information */
+  // Makes the section bars toggle the information
   $projectbar.on('mouseover', () => {
     $projectbar.css("background-color", "#ffad99");
   })
