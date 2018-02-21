@@ -1,9 +1,11 @@
 console.log("Welcome to my console!");
 
-// Sets the project photos to lazy load
-$(".project-photo").lazy();
-
 $(document).ready(() => {
+  // Sets the project photos to lazy load
+  $(function() {
+    $(".project-photo").Lazy();
+  });
+
   // Declaration of constants
   const $titlebar = $(".titlebar");
   const $selfportrait = $("#selfportrait");
@@ -112,7 +114,7 @@ $(document).ready(() => {
   })
   $experiencebar.on('click', () => {
     $experience.slideToggle(500);
-      $arrow2.text($arrow2.text() == "▼" ? "▲" : "▼");
+    $arrow2.text($arrow2.text() == "▼" ? "▲" : "▼");
   })
 
   $skillbar.on('mouseover', () => {
@@ -123,7 +125,7 @@ $(document).ready(() => {
   })
   $skillbar.on('click', () => {
     $technicalskills.slideToggle(500);
-      $arrow3.text($arrow3.text() == "▼" ? "▲" : "▼");
+    $arrow3.text($arrow3.text() == "▼" ? "▲" : "▼");
   })
 
   $awardbar.on('mouseover', () => {
@@ -134,7 +136,7 @@ $(document).ready(() => {
   })
   $awardbar.on('click', () => {
     $awards.slideToggle(500);
-      $arrow4.text($arrow4.text() == "▼" ? "▲" : "▼");
+    $arrow4.text($arrow4.text() == "▼" ? "▲" : "▼");
   })
 
   $educationbar.on('mouseover', () => {
@@ -145,6 +147,6 @@ $(document).ready(() => {
   })
   $educationbar.on('click', () => {
     $education.slideToggle(500);
-      $arrow5.text($arrow5.text() == "▼" ? "▲" : "▼");
+    $arrow5.text($arrow5.text() == "▼" ? "▲" : "▼");
   })
 });
