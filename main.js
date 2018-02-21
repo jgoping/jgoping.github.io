@@ -1,4 +1,8 @@
 console.log("Welcome to my console!");
+
+// Sets the project photos to lazy load
+$(".project-photo").lazy();
+
 $(document).ready(() => {
   // Declaration of constants
   const $titlebar = $(".titlebar");
@@ -14,7 +18,6 @@ $(document).ready(() => {
   const $github = $(".github");
   const $projectbar = $(".projectbar");
   const $projects = $("#projects");
-  const $projectphotos = $(".project-photo");
   const $experiencebar = $(".experiencebar");
   const $experience = $("#workexperience");
   const $skillbar = $(".skillbar");
@@ -28,9 +31,6 @@ $(document).ready(() => {
   const $arrow3 = $("#arrow3");
   const $arrow4 = $("#arrow4");
   const $arrow5 = $("#arrow5");
-
-  // Sets the project photos to lazy load
-  $projectphotos.lazy();
 
   $titlebar.css("visibility", "hidden");
   $sectionbar.hide();
