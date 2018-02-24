@@ -1,11 +1,6 @@
 console.log("Welcome to my console!");
 
 $(document).ready(() => {
-  // Sets the project photos to lazy load
-    /*$(".project-photo").Lazy({
-      delay: 2000
-    });*/
-
   // Declaration of constants
   const $titlebar = $(".titlebar");
   const $selfportrait = $("#selfportrait");
