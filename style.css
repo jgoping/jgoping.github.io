@@ -42,10 +42,16 @@ ul {
 }
 
 .grid-item {
+  display: grid;
   position: relative;
   border: 1px solid;
   margin: 10px;
   border-radius: 5px;
+}
+
+.footer {
+  margin-bottom: 6px;
+  align-self: end;
 }
 
 .project-photo {
@@ -56,12 +62,6 @@ ul {
   margin-right: auto;
   margin-bottom: 10px;
   border-radius: 5px;
-}
-
-.footer {
-  /*position: absolute;
-    margin-top: 50px;*/
-  bottom: 0;
 }
 
 .moveleft {
