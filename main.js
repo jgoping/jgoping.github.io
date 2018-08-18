@@ -91,10 +91,10 @@ $(document).ready(() => {
 
   // Makes the section bars toggle the information
   $projectbar.on('mouseover', () => {
-    $projectbar.css("background-color", "#ffad99");
+    $projectbar.css("background-color", "#549dff");
   })
   $projectbar.on('mouseleave', () => {
-    $projectbar.css("background-color", "#ff4d4d");
+    $projectbar.css("background-color", "#1372ef");
   })
   $projectbar.on('click', () => {
     $projects.slideToggle(500);
@@ -102,10 +102,10 @@ $(document).ready(() => {
   })
 
   $experiencebar.on('mouseover', () => {
-    $experiencebar.css("background-color", "#ffad99");
+    $experiencebar.css("background-color", "#549dff");
   })
   $experiencebar.on('mouseleave', () => {
-    $experiencebar.css("background-color", "#ff4d4d");
+    $experiencebar.css("background-color", "#1372ef");
   })
   $experiencebar.on('click', () => {
     $experience.slideToggle(500);
@@ -113,10 +113,10 @@ $(document).ready(() => {
   })
 
   $skillbar.on('mouseover', () => {
-    $skillbar.css("background-color", "#ffad99");
+    $skillbar.css("background-color", "#549dff");
   })
   $skillbar.on('mouseleave', () => {
-    $skillbar.css("background-color", "#ff4d4d");
+    $skillbar.css("background-color", "#1372ef");
   })
   $skillbar.on('click', () => {
     $technicalskills.slideToggle(500);
@@ -124,10 +124,10 @@ $(document).ready(() => {
   })
 
   $awardbar.on('mouseover', () => {
-    $awardbar.css("background-color", "#ffad99");
+    $awardbar.css("background-color", "#549dff");
   })
   $awardbar.on('mouseleave', () => {
-    $awardbar.css("background-color", "#ff4d4d");
+    $awardbar.css("background-color", "#1372ef");
   })
   $awardbar.on('click', () => {
     $awards.slideToggle(500);
@@ -135,13 +135,14 @@ $(document).ready(() => {
   })
 
   $educationbar.on('mouseover', () => {
-    $educationbar.css("background-color", "#ffad99");
+    $educationbar.css("background-color", "#549dff");
   })
   $educationbar.on('mouseleave', () => {
-    $educationbar.css("background-color", "#ff4d4d");
+    $educationbar.css("background-color", "#1372ef");
   })
   $educationbar.on('click', () => {
     $education.slideToggle(500);
     $arrow5.text($arrow5.text() == "▼" ? "▲" : "▼");
   })
+
 });

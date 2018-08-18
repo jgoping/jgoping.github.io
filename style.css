@@ -7,7 +7,7 @@ body {
 h1 {
   font-family: "Lato", sans-serif;
   color: #F0F0F0;
-  background-color: #ff4d4d;
+  background-color: #1372ef;
   border: 5px hidden;
   border-radius: 15px;
   padding: 2px 10px;
@@ -61,6 +61,35 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.job {
+  margin-bottom: 60px;
+}
+
+.job-text > ul {
+  margin-left: 86px;
+}
+
+.work-photo {
+  display: inline-block;
+  float: left;
+  width: 100px;
+  height: 65px;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+.work-photo-portrait {
+  display: inline-block;
+  float: left;
+  width: 65px;
+  height: 100px;
+  margin-left: 18px;
+  margin-right: 47px;
+  margin-bottom: 35px;
   border-radius: 5px;
 }
 
@@ -189,24 +218,17 @@ ul {
 }
 
 #introduction {
-  background-image: url("University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg");
-  /* I take no credit for the photo above, credit goes to Victor Vucicevich for taking it.
-     Link to source: https://commons.wikimedia.org/wiki/File:University_of_Waterloo_William_G._Davis_Computer_Research_Center.jpg*/
+  background-image: url("pond.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   text-align: center;
 }
 
 #arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
   font-size: 100%;
   float: right;
-}
-
-#projects {
-  /*background: #282828;
-  border-radius: 10px;
-  color: white;*/
 }
 
 #workexperience, #technicalskills, #awards, #education {
@@ -230,87 +252,6 @@ ul {
 .subheader {
   margin-left: 20px;
   color: #003d99;
-}
-
-.android-studio {
-  color: #2eb82e;
-}
-
-.python {
-  /*color: #0066ff;*/
-  color: #0b10cc;
-}
-
-.java {
-  color: #ff9933;
-}
-
-.turing {
-  color: #ff6600;
-}
-
-.html {
-  color: #6666ff;
-}
-
-.css {
-  color: #cc33ff;
-}
-
-.javascript {
-  color: #ff4d4d;
-}
-
-.jquery {
-  color: #ff4d4d;
-}
-
-.quilljs {
-  color: #006699;
-}
-
-.nodejs {
-  color: #10a431;
-}
-
-.expressjs {
-  color: #5fbf65;
-}
-
-.mongodb {
-  color: #197446;
-}
-
-.ajax {
-  color: #1478aa;
-}
-
-.watson {
-  color: #00bfff;
-}
-
-.firebase {
-  color: #e62e00;
-}
-
-.c {
-  color: #336600;
-}
-
-.cplusplus {
-  color: #59b300;
-}
-
-.ruby {
-  color: #ff6699;
-}
-
-.racket {
-  color: #666699;
-}
-
-.xml {
-  color: #00e6b8;
 }
 
 .important {
