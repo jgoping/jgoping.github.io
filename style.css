@@ -42,11 +42,11 @@ ul {
 }
 
 .grid-item {
-  display: grid;
   position: relative;
   border: 1px solid;
   margin: 10px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .footer {
@@ -111,7 +111,7 @@ ul {
 }
 
 .greeting {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 0px;
   padding: 5px;
   border: 5px solid;
@@ -161,13 +161,14 @@ ul {
   }
 }
 
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 380px) {
   .titlebar {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .greeting {
     margin: auto;
+    margin-top: 20px;
     width: 260px;
   }
 }
