@@ -205,20 +205,25 @@ ul {
   border-radius: 5px;
 }
 
-.resume {
+.arrow {
+  font-size: 100%;
+  float: right;
+}
+
+#resume {
   padding-right: 2px;
 }
 
-.linkedin {
+#linkedin {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.devpost {
+#devpost {
   padding-left: 2px;
 }
 
-.github {
+#github {
   padding-left: 2px;
 }
 
@@ -229,11 +234,6 @@ ul {
   background-size: cover;
   background-position: center center;
   text-align: center;
-}
-
-#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
-  font-size: 100%;
-  float: right;
 }
 
 #workexperience, #technicalskills, #awards, #education {
