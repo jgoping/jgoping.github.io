@@ -205,8 +205,12 @@ ul {
   border-radius: 5px;
 }
 
+.sectionbar {
+  vertical-align: middle;
+}
+
 .arrow {
-  font-size: 100%;
+  font-size: 80%;
   float: right;
 }
 
@@ -228,7 +232,7 @@ ul {
 }
 
 #introduction {
-  background-image: url("pond.jpg");
+  background-image: url("photos/pond.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
