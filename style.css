@@ -1,15 +1,10 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #F0F0F0;
 }
 
 h1 {
   font-family: "Lato", sans-serif;
-  color: #F0F0F0;
-  background-color: #1372ef;
-  border: 5px hidden;
-  border-radius: 15px;
   padding: 2px 10px;
   margin: 0px 10px 4px 10px;
 }
@@ -37,21 +32,23 @@ ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 6px 20px;
+  grid-template-columns: auto auto auto auto;
+  padding: 6px 80px;
 }
 
 .grid-item {
   position: relative;
-  border: 1px solid;
   margin: 10px;
-  border-radius: 5px;
   overflow: hidden;
 }
 
 .footer {
   margin-bottom: 6px;
   align-self: end;
+}
+
+#projects {
+  background-color: #F0F0F0;
 }
 
 .project-photo {
@@ -62,6 +59,43 @@ ul {
   margin-right: auto;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.modal-photo {
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.hoverable:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 60%;
+  max-height: 85%;
+  overflow: auto;
 }
 
 .job {
@@ -101,47 +135,118 @@ ul {
   margin-left: -15px;
 }
 
+#landing-page {
+  background-image: url("photos/darkGolfCourse.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+}
+
 .titlebar {
-  font-size: 70px;
-  height: 90px;
-  margin: -10px 4px 0px 4px;
-  overflow: hidden;
+  top: 15%;
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  overflow: visible;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.greeting {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding: 5px;
+#selfportrait {
+  top: 40%;
+  position: absolute;
+  border: 2px solid;
+  border-color: #FFFFFF;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.icons {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 5px 5px 1px 5px;
   border: 5px solid;
   display: inline-block;
   background: #F0F0F0;
   border-color: #F0F0F0;
   border-radius: 5px;
-  width: 370px;
+  width: 120px;
 }
 
-@media screen and (max-width: 900px) {
+.greeting {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 5px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1480px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .grid-container {
     grid-template-columns: auto auto;
   }
 }
 
+@media screen and (max-width: 950px) {
+  .modal-photo {
+    width: 225px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
 @media screen and (max-width: 700px) {
-  .project-photo {
-    width: 220px;
-    height: 170px;
+  .titlebar {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .modal-photo {
+    width: 150px;
+    height: 100px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .grid-container {
-    grid-template-columns: auto;
+  .titlebar {
+    font-size: 55px;
   }
+}
+
+@media screen and (max-width: 500px) {
   .project-photo {
-    width: 300px;
-    height: 200px;
+    width: 210px;
+    height: 140px;
   }
 }
 
@@ -155,21 +260,28 @@ ul {
   .greeting {
     width: 300px;
   }
-  .project-photo {
-    width: 260px;
-    height: 170px;
-  }
 }
 
 @media only screen and (max-width: 380px) {
-  .titlebar {
-    font-size: 40px;
-  }
-
   .greeting {
     margin: auto;
     margin-top: 20px;
     width: 260px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  #landing-page {
+    height: 500px;
+  }
+  .titlebar {
+    top: 75px;
+  }
+  #selfportrait {
+    top: 200px;
+  }
+  .icons {
+    top: 400px;
   }
 }
 
@@ -181,32 +293,18 @@ ul {
   margin-bottom: 0px;
 }
 
-#selfportrait {
-  margin-top: 16px;
-  border: 2px solid;
-  border-color: #FFFFFF;
-  border-radius: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  width: 225px;
-  height: 225px;
-}
-
-.icons {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 5px 5px 1px 5px;
-  border: 5px solid;
-  display: inline-block;
-  background: #F0F0F0;
-  border-color: #F0F0F0;
-  border-radius: 5px;
+.icon:hover {
+  transform: scale(1.5);
 }
 
 .sectionbar {
+  padding-top: 20px;
+  margin-bottom: 20px;
   vertical-align: middle;
+}
+
+.section {
+  padding-bottom: 20px;
 }
 
 .arrow {
@@ -231,41 +329,23 @@ ul {
   padding-left: 2px;
 }
 
-#introduction {
-  background-image: url("photos/pond.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-}
-
-#workexperience, #technicalskills, #awards, #education {
+#workexperience-content, #technicalskills-content, #awards-content {
   margin-left: 15px;
   margin-right: 15px;
 }
 
 #technicalskills {
+  background-color: #F0F0F0;
   margin-top: 10px;
-}
-
-#education {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.project-subheader {
-  color: #003d99;
 }
 
 .subheader {
   margin-left: 20px;
-  color: #003d99;
 }
 
 .important {
-  color: #0066ff;
   font-style: italic;
+  font-weight: bold;
 }
 
 .bold {
