@@ -51,7 +51,7 @@ $(document).ready(() => {
     }
   }
 
-  $('a').on('click',function(event){
+  $('.nav-list-item a').on('click',function(event){
     event.preventDefault();
 
     var target = $($(this).attr('href'));

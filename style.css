@@ -167,7 +167,7 @@ ul {
 }
 
 .nav-list-item {
-  float: right;
+  float: left;
   margin: 0;
 }
 
@@ -269,6 +269,12 @@ ul {
 @media screen and (max-width: 820px) {
   .grid-container {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #nav-list {
+    display: none;
   }
 }
 
@@ -404,4 +410,8 @@ ul {
 
 .italics {
   font-style: italic;
+}
+
+.float-right {
+  float: right;
 }
