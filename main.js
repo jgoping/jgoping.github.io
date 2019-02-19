@@ -8,9 +8,9 @@ $(document).ready(() => {
   const $icons = $(".icons");
 
   $titlebar.css("visibility", "hidden");
-  $section.hide();
   $selfportrait.css("visibility", "hidden");
   $icons.css("visibility", "hidden");
+  $section.hide();
 
   // Fades in the elements
   $titlebar.css("visibility", "visible").hide().fadeIn(600, function() {

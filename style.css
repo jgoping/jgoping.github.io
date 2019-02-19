@@ -72,6 +72,7 @@ ul {
 }
 
 .hoverable:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
 
@@ -96,6 +97,18 @@ ul {
   width: 60%;
   max-height: 85%;
   overflow: auto;
+}
+
+.close {
+  color: lightgrey;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .job {
@@ -295,6 +308,7 @@ ul {
 }
 
 .icon:hover {
+  cursor: pointer;
   transform: scale(1.5);
 }
 
