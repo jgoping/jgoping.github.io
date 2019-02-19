@@ -1,5 +1,9 @@
 console.log("Welcome to my console!");
 
+function getModalIndex(event) {
+  return parseInt(event.srcElement.id.substr(-1));
+}
+
 $(document).ready(() => {
   // Declaration of constants
   const $titlebar = $(".titlebar");
@@ -20,17 +24,23 @@ $(document).ready(() => {
   });
 
   // Modal code
-  var modal = []
-  var button = []
+  var modal = [];
+  var button = [];
+  var close = [];
   var modalMap = new Map();
 
   for (i=1; i<9; ++i) {
     button[i] = document.getElementById('project' + i);
     modal[i] = document.getElementById('modal' + i);
-    modalMap.set('project' + i, modal[i]);
+    close[i] = document.getElementById('close' + i);
+    modalMap.set(i, modal[i]);
 
-    button[i].onclick = function() {
-      modalMap.get(event.srcElement.id).style.display = "block";
+    button[i].onclick = function(event) {
+      modalMap.get(getModalIndex(event)).style.display = "block";
+    }
+
+    close[i].onclick = function() {
+      modalMap.get(getModalIndex(event)).style.display = "none";
     }
   }
 
