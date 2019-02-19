@@ -6,6 +6,8 @@ function getModalIndex(event) {
 
 $(document).ready(() => {
   // Declaration of constants
+  const offset = 41.5;
+  const duration = 100;
   const $titlebar = $(".titlebar");
   const $selfportrait = $("#selfportrait");
   const $section = $(".section");
@@ -34,12 +36,10 @@ $(document).ready(() => {
     close[i] = document.getElementById('close' + i);
 
     button[i].onclick = function(event) {
-      console.log(event.srcElement);
-      console.log(button);
       modal[getModalIndex(event)].style.display = "block";
     }
 
-    close[i].onclick = function() {
+    close[i].onclick = function(event) {
       modal[getModalIndex(event)].style.display = "none";
     }
   }
@@ -50,4 +50,13 @@ $(document).ready(() => {
       modal[index].style.display = "none";
     }
   }
+
+  $('a').on('click',function(event){
+    event.preventDefault();
+
+    var target = $($(this).attr('href'));
+    var targetPosition = $(target).offset().top - offset;
+
+    $('body, html').animate({ 'scrollTop': targetPosition }, duration);
+  });
 });

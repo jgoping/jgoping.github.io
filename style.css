@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -148,6 +152,36 @@ ul {
   margin-left: -15px;
 }
 
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+  border-bottom: 1px solid;
+  border-color: lightgrey;
+}
+
+.nav-list-item {
+  float: right;
+  margin: 0;
+}
+
+.nav-list-item a {
+  color: black;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.nav-list-item a:hover {
+  background-color: grey;
+}
+
 #landing-page {
   background-image: url("photos/darkGolfCourse.jpg");
   background-blend-mode: darken;
@@ -180,7 +214,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center
+  justify-content: center;
   overflow: hidden;
   width: 200px;
   height: 200px;
