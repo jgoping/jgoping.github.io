@@ -139,6 +139,7 @@ ul {
   background-image: url("photos/darkGolfCourse.jpg");
   background-blend-mode: darken;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   z-index: 2;
   display: flex;
@@ -323,6 +324,7 @@ ul {
 
 #devpost {
   padding-left: 2px;
+  padding-right: 2px;
 }
 
 #github {
