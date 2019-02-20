@@ -9,8 +9,8 @@ body {
 
 h1 {
   font-family: "Lato", sans-serif;
-  padding: 2px 10px;
   margin: 0px 10px 4px 10px;
+  padding: 2px 10px;
 }
 
 h2 {
@@ -24,10 +24,7 @@ h2, h3 {
 p, li {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px 20px;
 }
 
 ul {
@@ -41,14 +38,14 @@ ul {
 }
 
 .grid-item {
-  position: relative;
   margin: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .footer {
-  margin-bottom: 6px;
   align-self: end;
+  margin-bottom: 6px;
 }
 
 #projects {
