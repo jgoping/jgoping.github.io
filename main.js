@@ -1,17 +1,28 @@
 console.log("Welcome to my console!");
 
-function getModalIndex(event) {
-  return parseInt(event.srcElement.id.substr(-1));
-}
-
 $(document).ready(() => {
+  function getModalIndex(event) {
+    return parseInt(event.srcElement.id.substr(-1));
+  }
+
+  function setNavbarColour(backgroundColour, borderColour, itemColour) {
+    $navList.style.backgroundColor = backgroundColour;
+    $navList.style.borderColor = borderColour;
+    $navListItems.each(function(index, value) {
+      value.style.color = itemColour;
+    });
+  }
+
   // Declaration of constants
-  const offset = 41.5;
   const duration = 100;
-  const $titlebar = $(".titlebar");
-  const $selfportrait = $("#selfportrait");
-  const $section = $(".section");
   const $icons = $(".icons");
+  const $introduction = $('#introduction');
+  const $navList = $('#nav-list')[0];
+  const $navListItems = $('.nav-list-item a');
+  const offset = 41.5;
+  const $section = $(".section");
+  const $selfportrait = $("#selfportrait");
+  const $titlebar = $(".titlebar");
 
   // Hide elements
   $titlebar.css("visibility", "hidden");
@@ -54,7 +65,7 @@ $(document).ready(() => {
 
 
   // Navigation bar code
-  $('.nav-list-item a').on('click',function(event){
+  $navListItems.on('click',function(event){
     event.preventDefault();
 
     var target = $($(this).attr('href'));
@@ -62,4 +73,21 @@ $(document).ready(() => {
 
     $('body, html').animate({ 'scrollTop': targetPosition }, duration);
   });
+
+
+  // Navigation bar colour code
+  var onLandingPage = false;
+
+  $(window).scroll(function() {
+    if ($introduction.position().top <= $(window).scrollTop() + offset) {
+      if (onLandingPage) {
+        setNavbarColour("white", "lightgrey", "black");
+        onLandingPage = false;
+      }
+    } else if (!onLandingPage) {
+      setNavbarColour("", "", "");
+      onLandingPage = true;
+    }
+
+  }).scroll();
 });
