@@ -13,6 +13,7 @@ $(document).ready(() => {
   const $section = $(".section");
   const $icons = $(".icons");
 
+  // Hide elements
   $titlebar.css("visibility", "hidden");
   $selfportrait.css("visibility", "hidden");
   $icons.css("visibility", "hidden");
@@ -51,6 +52,8 @@ $(document).ready(() => {
     }
   }
 
+
+  // Navigation bar code
   $('.nav-list-item a').on('click',function(event){
     event.preventDefault();
 

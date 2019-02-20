@@ -272,12 +272,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 750px) {
-  #nav-list {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .titlebar {
     font-size: 70px;
@@ -288,6 +282,10 @@ ul {
   .modal-photo {
     width: 150px;
     height: 100px;
+  }
+
+  #nav-list {
+    display: none;
   }
 }
 
