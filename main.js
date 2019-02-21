@@ -20,7 +20,7 @@ $(document).ready(() => {
   const $navList = $('#nav-list')[0];
   const $navListItems = $('.nav-list-item a');
   const offset = 41.5;
-  const $section = $(".section");
+  const $sections = $(".section");
   const $selfportrait = $("#selfportrait");
   const $titlebar = $(".titlebar");
 
@@ -28,13 +28,13 @@ $(document).ready(() => {
   $titlebar.css("visibility", "hidden");
   $selfportrait.css("visibility", "hidden");
   $icons.css("visibility", "hidden");
-  $section.hide();
+  $sections.hide();
 
   // Fades in the elements
   $titlebar.css("visibility", "visible").hide().fadeIn(600, function() {
     $selfportrait.css("visibility", "visible").hide().fadeIn(600);
     $icons.css("visibility", "visible").hide().fadeIn(600);
-    $section.fadeIn(600);
+    $sections.fadeIn(600);
   });
 
   // Modal code
