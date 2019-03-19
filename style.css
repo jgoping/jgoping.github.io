@@ -242,6 +242,12 @@ ul {
   display: inline-block;
 }
 
+.section {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 1480px) {
   .grid-container {
     grid-template-columns: auto auto auto;
@@ -294,6 +300,11 @@ ul {
   .project-photo {
     width: 210px;
     height: 140px;
+  }
+
+  .section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -349,12 +360,6 @@ ul {
   padding-top: 20px;
   margin-bottom: 20px;
   vertical-align: middle;
-}
-
-.section {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 20px;
 }
 
 .arrow {
