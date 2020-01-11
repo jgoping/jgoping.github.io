@@ -422,6 +422,10 @@ ul {
   float: right;
 }
 
+#music {
+  background-color: rgb(233, 233, 233);
+}
+
 #music-intro {
   margin-left: 20%;
   margin-right: 20%;
