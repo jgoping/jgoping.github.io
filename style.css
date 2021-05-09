@@ -91,6 +91,7 @@ ul {
 }
 
 .modal-content {
+  position: relative;
   background-color: white;
   margin: auto;
   padding: 10px 20px 20px 20px;
@@ -100,9 +101,13 @@ ul {
   overflow: auto;
 }
 
+.modal-top-right {
+  position: absolute;
+  right: 16px;
+}
+
 .close {
   color: lightgrey;
-  float: right;
   font-size: 24px;
   font-weight: bold;
 }
@@ -335,6 +340,13 @@ ul {
 .icon:hover {
   cursor: pointer;
   transform: scale(1.5);
+}
+
+.github-link {
+  position: relative;
+  text-decoration: none;
+  top: 2px;
+  margin-right: 4px;
 }
 
 .sectionbar {
