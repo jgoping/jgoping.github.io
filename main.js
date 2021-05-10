@@ -41,7 +41,7 @@ $(document).ready(() => {
   var modal = [];
   var button = [];
   var close = [];
-  const numProjects = 4;
+  const numProjects = 5;
 
   for (i=1; i <= numProjects; ++i) {
     button[i] = document.getElementById('project' + i);
